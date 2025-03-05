@@ -5,6 +5,7 @@ To use this script:
   1. Save the script as `hap-encoder.py`
   2. Make sure FFmpeg is installed and available in your system PATH.
   3. Run from the command line:
+  4. Make sure the script is executable using `chmod -x hap-encoder.py` if using a macOS or Linux system.
 
   `python hap-encoder.py input_folder output_folder [--hap-format FORMAT] [--overwrite]`
 
