@@ -27,3 +27,7 @@ To use this script:
   Python 3.6+
 
   FFmpeg with HAP support (most recent versions should work)
+
+## Notes
+
+The conversion process can be resource-intensive and time-consuming depending on your hardware and video file sizes. For better performance, you might want to add additional FFmpeg parameters like -threads to utilize more CPU cores.
