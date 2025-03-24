@@ -23,7 +23,7 @@ def main():
         if filename.lower().endswith('.mp4'):
             input_path = os.path.join(args.input_dir, filename)
             output_filename = os.path.splitext(filename)[0] + '.mov'
-            output_path = os.path.join(args.outputd_dir, output_filename)
+            output_path = os.path.join(args.output_dir, output_filename)
 
             # skip existing files if overwrite disabled
             if os.path.exists(output_path) and not args.overwrite:
