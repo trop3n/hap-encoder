@@ -19,8 +19,10 @@ def main():
     os.makedirs(args.output_dir, exist_ok=True)
 
     # process files
+    valid_ext = ('.mp4', '.mov')
     for filename in os.listdir(args.input_dir):
-        if filename.lower().endswith('.mp4'):
+        if not filename.lower().endswith(valid_ext):
+            continue
             input_path = os.path.join(args.input_dir, filename)
             output_filename = os.path.splitext(filename)[0] + '.mov'
             output_path = os.path.join(args.output_dir, output_filename)
